@@ -66,6 +66,8 @@ The diagram file, title `AWS-WebServiceDiagram-v1-insecure.png`, can be found in
 - Scripts simulating an attack will be run from a separate instance which is in an un-trusted subnet.
 - The scripts will attempt to break into the web application instance using the public IP and attempt to access data in the secret recipe S3 bucket.
 
+:white_check_mark: Done
+
 ---
 
 ### Task 2: Review CloudFormation Template
@@ -89,6 +91,8 @@ Additionally, we have provided a CloudFormation template which will deploy the f
 - Application LoadBalancer
 - Security groups
 - IAM role
+
+:white_check_mark: Done
 
 ---
 
@@ -151,6 +155,10 @@ https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks
 
 ![Expected AWS Console Status](starter/cloudformation_status.png)
 
+:no_entry_sign: :bug: [Application Stack fails unless you add this fix!](https://knowledge.udacity.com/questions/576951)
+
+:white_check_mark: Done
+
 #### 2. Once you see Status is CREATE_COMPLETE for all 3 stacks, obtain the required parameters needed for the project.
 
 Obtain the name of the S3 bucket by navigating to the Outputs section of the stack:
@@ -196,6 +204,8 @@ http://<ApplicationURL>/free_recipe
 You should receive a recipe for banana bread.
 
 The AMIs specified in the cloud formation template exist in the us-east-1 (N. Virginia) region. You will need to set this as your default region when deploying resources for this project.
+
+:white_check_mark: Done
 
 ---
 
