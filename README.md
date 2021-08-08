@@ -66,7 +66,7 @@ The diagram file, title `AWS-WebServiceDiagram-v1-insecure.png`, can be found in
 - Scripts simulating an attack will be run from a separate instance which is in an un-trusted subnet.
 - The scripts will attempt to break into the web application instance using the public IP and attempt to access data in the secret recipe S3 bucket.
 
-:white_check_mark: Done
+:ballot_box_with_check: Done
 
 ---
 
@@ -92,7 +92,7 @@ Additionally, we have provided a CloudFormation template which will deploy the f
 - Security groups
 - IAM role
 
-:white_check_mark: Done
+:ballot_box_with_check: Done
 
 ---
 
@@ -157,7 +157,7 @@ https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks
 
 :no_entry_sign: :bug: [Application Stack fails unless you add this fix!](https://knowledge.udacity.com/questions/576951)
 
-:white_check_mark: Done
+:ballot_box_with_check: Done
 
 #### 2. Once you see Status is CREATE_COMPLETE for all 3 stacks, obtain the required parameters needed for the project.
 
@@ -205,7 +205,7 @@ You should receive a recipe for banana bread.
 
 The AMIs specified in the cloud formation template exist in the us-east-1 (N. Virginia) region. You will need to set this as your default region when deploying resources for this project.
 
-:white_check_mark: Done
+:ballot_box_with_check: Done
 
 ---
 
@@ -215,7 +215,9 @@ Based on the architecture diagram, and the steps you have taken so far to upload
 
 **Deliverables:**
 
-- **E1T4.txt** - Text file identifying 2 poor security practices with justification.
+- **[E1T4.txt](./E1T4.txt)** - Text file identifying 2 poor security practices with justification.
+
+:ballot_box_with_check: Done
 
 ---
 

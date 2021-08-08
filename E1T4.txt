@@ -1,0 +1,20 @@
+Based on the architecture diagram, and the steps you have taken so far to 
+upload data and access the application web service, identify at least 2 
+obvious poor practices as it relates to security. 
+List these 2 practices, and a justification for your choices, 
+in the text file named E1T4.txt.
+
+1. WebAppSG: This web service's security group permits ingress traffic 
+    from any IP address on the internet to all ports which exposes 
+    this server to attacks.
+    It also allows all egress traffic to any IP address.
+
+2. RecipeWebServiceInstance: The Recipe Web Service Instance is located
+    in a public subnet instead of being moved to a private subnet.
+
+3. S3BucketRecipesSecret: These 'secrets' are not encrypted allowing 
+    them to be read by anyone with account access.
+
+4. InstanceRole and InstanceProfileRole: This IAM Role + ProfileRole 
+    used by the web service has full access to S3 actions, which 
+    does not conform to the security principle of least privilege.
