@@ -16,34 +16,7 @@ In this project, you will:
 
 ---
 
-## Dependencies and Prerequisites
-
-### Access to AWS account
-
-Students will need to use either their personal AWS account or the federated user account provided by Udacity (if available to you). In either case, you need to track your usage and expenditure on [AWS Billing Dashboard](https://console.aws.amazon.com/billing/home#/) regularly. Remember, all AWS services are a pay-as-you-go service, so shut down/delete every AWS resource immediately after the usage or if you are stepping away for a few hours.
-
-### Installation of the AWS CLI and Local Setup of AWS API keys
-
-Instructions and examples in this project will make use of the AWS CLI in order to automate and reduce time and complexity.
-Refer to the below links to get the AWS CLI installed and configured in your local environment.
-
-[Installing the CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-
-[Configuring the CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-
-### Local setup of git and GitHub Repository
-
-You will need to clone or download [this GitHub repo](https://github.com/udacity/nd063-c3-design-for-security-project-starter) in order to work on and submit this project.
-
----
-
 ## Exercise 1 - Deploy Project Environment
-
-**_Deliverables for Exercise 1:_**
-
-- **E1T4.txt** - Text file identifying 2 poor security practices with justification.
-
----
 
 ### Task 1: Review Architecture Diagram
 
@@ -223,15 +196,6 @@ Based on the architecture diagram, and the steps you have taken so far to upload
 
 ## Exercise 2: Enable Security Monitoring
 
-**_Deliverables for Exercise 2:_**
-
-- **E2T2_config.png** - Screenshot of AWS Config showing non-compliant rules.
-- **E2T2_inspector.png** - Screenshot of AWS Inspector showing scan results.
-- **E2T2.png_securityhub.png** - Screenshot of AWS Security Hub showing compliance standards for CIS foundations.
-- **E2T2.txt** - Provide recommendations on how to remediate the vulnerabilities.
-
----
-
 ### Task 1: Enable Security Monitoring using AWS Native Tools
 
 First, we will set up security monitoring to ensure that the AWS account and environment configuration is in compliance with the CIS standards for cloud security.
@@ -264,6 +228,8 @@ g. Click **Next** and **Create**.
 #### 4. Enable AWS Guard Duty
 
 a. After 1-2 hours, data will populate in these tools giving you a glimpse of security vulnerabilities in your environment.
+
+:ballot_box_with_check: Done
 
 ---
 
