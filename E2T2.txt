@@ -1,0 +1,60 @@
+=====
+Research and analyze which of the vulnerabilities appear to be 
+related to the code that was deployed for the environment in this project. 
+
+Provide recommendations on how to remediate the vulnerabilities. 
+
+Submit your findings in E2T2.txt
+=====
+
+1. CIS.4.1	Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
+
+	Rationale:
+	
+		Removing unfettered connectivity to remote console services, such as SSH, reduces a
+		server's exposure to risk.
+	
+	Remediation steps:
+		
+		- Ensure that administrators currently relying on an existing ingress 
+		from 0.0.0.0/0 have access to ports 22 through another security group.
+		
+		- Remove Inbound Rule above from AttackInstanceSG and 
+		WebAppSG Security Groups
+		
+2. CIS.2.1	Ensure CloudTrail is enabled in all regions
+
+	Rationale:
+		
+		Enables auditing and supports any future cybersecurity forensic investigations.
+
+	Remediation steps:
+	
+		- Enable CloudTrail across all regions with logs stored in S3.
+		
+3. CIS.2.4	Ensure CloudTrail trails are integrated with CloudWatch Logs
+
+	Rationale:
+		
+		Sending CloudTrail logs to CloudWatch Logs will facilitate real-time and historic activity
+		logging based on user, API, resource, and IP address, and provides opportunity to establish
+		alarms and notifications for anomalous or sensitivity account activity.
+
+	Remediation steps:
+	
+		- Configure each CloudTrail with a new or existing CloudWatch Log Group.
+		
+		- Configure IAM Role and Policy that will deliver CloudTrail events to CloudWatch Logs.
+		
+4. Enable CloudWatch log metric filters and alarms
+
+	- CIS.3.1 Ensure a log metric filter and alarm exist for unauthorized API calls	
+	- CIS.3.10 Ensure a log metric filter and alarm exist for security group changes	
+	- CIS.3.13 Ensure a log metric filter and alarm exist for route table changes	
+	- CIS.3.14 Ensure a log metric filter and alarm exist for VPC changes	
+	- CIS.3.4 Ensure a log metric filter and alarm exist for IAM policy changes	
+	- CIS.3.5 Ensure a log metric filter and alarm exist for CloudTrail configuration changes	
+	- CIS.3.8 Ensure a log metric filter and alarm exist for S3 bucket policy changes	
+	- CIS.3.9 Ensure a log metric filter and alarm exist for AWS Config configuration changes	
+	- CIS.2.3 Ensure the S3 bucket used to store CloudTrail logs is not publicly accessible	
+	- CIS.2.6 Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket

@@ -247,10 +247,15 @@ Research and analyze which of the vulnerabilities appear to be related to the co
 
 **Deliverables:**
 
-- **E2T2_config.png** - Screenshot of AWS Config showing non-compliant rules.
-- **E2T2_inspector.png** - Screenshot of AWS Inspector showing scan results.
-- **E2T2.png_securityhub.png** - Screenshot of AWS Security Hub showing compliance standards for CIS foundations.
-- **E2T2.txt** - Provide recommendations on how to remediate the vulnerabilities.
+- **[E2T2_config.png](./E2T2_config.png)** - Screenshot of AWS Config showing non-compliant rules.
+  - ![E2T2_config.png](./E2T2_config.png)
+- **[E2T2_inspector.png](./E2T2_inspector.png)** - Screenshot of AWS Inspector showing scan results.
+  - ![E2T2_inspector.png](./E2T2_inspector.png)
+- **[E2T2.png_securityhub.png](./E2T2.png_securityhub.png)** - Screenshot of AWS Security Hub showing compliance standards for CIS foundations.
+  - ![E2T2.png_securityhub.png](./E2T2.png_securityhub.png)
+- **[E2T2.txt](./E2T2.txt)** - Provide recommendations on how to remediate the vulnerabilities.
+
+:ballot_box_with_check: Done
 
 ---
 
