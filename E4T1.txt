@@ -1,0 +1,22 @@
+=====
+Task 1 - Remediation plan
+As a Cloud Architect, you have been asked to apply security best practices to the environment so that it can withstand attacks and be more secure.
+=====
+Identify 2-3 changes that can be made to our environment to prevent an SSH brute force attack from the internet.
+=====
+
+1. Disable logins via SSH for the root account, using SUDO to elevate privileges for
+super user actions which will be logged.
+
+2. Filter traffic to your SSH serverm restricting access to only known IP addresses.
+
+3. Enforce strong passwords to enhance your defence against dictionary password attacks.
+
+- Source: https://www.cmu.edu/iso/aware/be-aware/brute-force_ssh_attack.html
+
+=====
+Neither instance should have had access to the secret recipes bucket; 
+even in the instance that API credentials were compromised how could we have prevented access to sensitive data?
+=====
+- Enable default server-side S3 encryption.
+- Source: https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.html

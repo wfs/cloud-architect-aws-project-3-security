@@ -392,11 +392,13 @@ As a Cloud Architect, you have been asked to apply security best practices to th
 1. Identify 2-3 changes that can be made to our environment to prevent an SSH brute force attack from the internet.
 2. Neither instance should have had access to the secret recipes bucket; even in the instance that API credentials were compromised how could we have prevented access to sensitive data?
 
-Submit answer in E4T1.txt
+Submit answer in [E4T1.txt](./E4T1.txt)
 
 **Deliverables:**
 
 - **E4T1.txt** - Answer to the prompts in Exercise 4, Task 1.
+
+:ballot_box_with_check: Done
 
 ---
 
@@ -429,6 +431,10 @@ sudo service ssh restart
 **Deliverables:**
 
 - **E4T2_sshbruteforce.png** - Screenshot of terminal window showing the brute force attack and the remediation.
+
+![E4T2_sshbruteforce.png](./E4T2_sshbruteforce.png)
+
+:ballot_box_with_check: Done
 
 #### Apply Network Controls to Restrict Application Server Traffic
 
