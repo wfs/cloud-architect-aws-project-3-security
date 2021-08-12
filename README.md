@@ -356,6 +356,11 @@ Submit screenshots of your attempts and monitoring or logs from the WAF showing 
 **Deliverables:**
 
 - **E3T2_s3breach.png** - Screenshot showing the resulting breach after the brute force attack.
+
+![E3T2_s3breach.png](./E3T2_s3breach.png)
+
+:ballot_box_with_check: Done
+
 - _Optional_ **Task 3** - Screenshots showing attack attempts and monitoring or logs from the WAF showing blocked attempts.
 
 ---
