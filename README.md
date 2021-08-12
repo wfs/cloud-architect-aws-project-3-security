@@ -291,10 +291,18 @@ date
 hydra -l ubuntu -P rockyou.txt ssh://<YourApplicationServerDnsNameHere>
 ```
 
+:no_entry_sign: :bug: Follow [steps in this post](https://www.serverkaka.com/2018/08/enable-password-authentication-aws-ec2-instance.html) to resolve the following error.
+
+```
+[ERROR] target ssh://insert-your-ec2-instance-ip-address-here:22/ does not support password authentication.
+```
+
 You should see output similar to the following:
 ![Brute Force](starter/brute_force.png)
 
 Wait 10 - 15 minutes and check AWS Guard Duty.
+
+:no_entry_sign: :bug: [GuardDuty is not showing any results - expected brute force attack at least](https://knowledge.udacity.com/questions/641544)
 
 #### 3. Answer the following questions:
 
@@ -307,7 +315,13 @@ Submit text answers in E3T1.txt.
 **Deliverables:**
 
 - **E3T1_guardduty.png** - Screenshot of Guard Duty findings specific to the Exercise 3, Task 1 attack.
-- **E3T1.txt** - Answer to the questions at the end of Exercise 3, Task 1.
+- **[E3T1.txt](./E3T1.txt)** - Answer to the questions at the end of Exercise 3, Task 1.
+  ![ssh_brute_force_attach_terminal_1.png](./ssh_brute_force_attach_terminal_1.png)
+  ![ssh_brute_force_attach_terminal_2.png](./ssh_brute_force_attach_terminal_2.png)
+  ![ssh_brute_force_attach_terminal_3.png](./ssh_brute_force_attach_terminal_3.png)
+  ![aws_guard_duty_after_15_hours_no_detection.png](./aws_guard_duty_after_15_hours_no_detection.png)
+
+:ballot_box_with_check: Done
 
 ---
 

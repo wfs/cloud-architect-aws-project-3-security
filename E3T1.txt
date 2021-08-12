@@ -1,0 +1,14 @@
+=====
+1. What findings were detected related to the brute force attack?
+2. Take a screenshot of the Guard Duty findings specific to the attack. Title this screenshot E3T1_guardduty.png.
+3. Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information?
+=====
+
+Unfortunately there is a known issue with this exercise.
+
+Following the advice in the Udacity Knowledge post, here are the screenshots required.
+
+ssh_brute_force_attach_terminal_1.png
+ssh_brute_force_attach_terminal_2.png
+ssh_brute_force_attach_terminal_3.png
+aws_guard_duty_after_15_hours_no_detection.png
