@@ -1,0 +1,39 @@
+=====
+
+*****
+1. What additional architectural change can be made to reduce the internet-facing attack surface of the web application instance.
+- Add AWS Shield as protection against DDOS attacks.
+- Add Web Application Firewall (WAF) to prevent common security exploits against your application.
+- Add API Gateway for controlling API calls and AWS Certificate Manager for encrypted API traffic.
+- Move the Web Service Instance to the Private Subnet 1 and add a NAT gateway for internet software updates and downloads.
+- Integrate a federated IAM for user authentication and create / assign IAM roles for authorisation. 
+
+*****
+2. Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent 
+the unauthorized access to the secrets bucket.
+
+No, as moving the S3 bucket to a private VPC endpoint would only prevent traffic coming from outside the VPC.
+As you have insecure IAM permissions for the S3 bucket, unauthorised access can still occur.
+
+Research:
+- https://aws.amazon.com/premiumsupport/knowledge-center/block-s3-traffic-vpc-ip/
+- https://tomgregory.com/when-to-use-an-aws-s3-vpc-endpoint/
+- https://aws.amazon.com/privatelink/
+
+*****
+3. Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+No, as encryption only occurs on new objects in the S3 bucket after being enabled.
+
+Research:
+- https://aws.amazon.com/premiumsupport/knowledge-center/s3-aws-kms-default-encryption/
+
+*****
+4. The changes you made above were done through the console or CLI; describe the outcome if the original cloud formation templates
+are applied to this environment?
+
+The templates would overwrite all of the changes made to the environment made to this point.
+
+Research:
+- https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-howdoesitwork.html#updating-stack-with-change-sets
+
+=====

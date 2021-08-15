@@ -302,7 +302,9 @@ You should see output similar to the following:
 
 Wait 10 - 15 minutes and check AWS Guard Duty.
 
-:no_entry_sign: :bug: [GuardDuty is not showing any results - expected brute force attack at least](https://knowledge.udacity.com/questions/641544)
+:warning: :astonished: Takes a few days to materialise. Don't give up!
+
+[GuardDuty is not showing any results - expected brute force attack at least](https://knowledge.udacity.com/questions/641544)
 
 #### 3. Answer the following questions:
 
@@ -317,9 +319,10 @@ Submit text answers in E3T1.txt.
 - **E3T1_guardduty.png** - Screenshot of Guard Duty findings specific to the Exercise 3, Task 1 attack.
 - **[E3T1.txt](./E3T1.txt)** - Answer to the questions at the end of Exercise 3, Task 1.
   ![ssh_brute_force_attach_terminal_1.png](./ssh_brute_force_attach_terminal_1.png)
-  ![ssh_brute_force_attach_terminal_2.png](./ssh_brute_force_attach_terminal_2.png)
-  ![ssh_brute_force_attach_terminal_3.png](./ssh_brute_force_attach_terminal_3.png)
-  ![aws_guard_duty_after_15_hours_no_detection.png](./aws_guard_duty_after_15_hours_no_detection.png)
+  ![vpc_flow_logs_s3_destination.png](./vpc_flow_logs_s3_destination.png)
+  ![vpc_flow_log_in_s3_containing_attack_logs.png](./vpc_flow_log_in_s3_containing_attack_logs.png)
+  ![attack_instance_private_ip.png](./attack_instance_private_ip.png)
+  ![vpc_flow_log_highlighted_attacks_from_attack_instance.png](./vpc_flow_log_highlighted_attacks_from_attack_instance.png)
 
 :ballot_box_with_check: Done
 
@@ -445,7 +448,12 @@ sudo service ssh restart
 **Deliverables**:
 
 - **E4T2_networksg.png** - Screenshot of the security group change.
+  ![E4T2_networksg.png](./E4T2_networksg.png)
+
 - **E4T2_sshattempt.png** - Screenshot of your SSH attempt.
+  ![E4T2_sshattempt.png](./E4T2_sshattempt.png)
+
+:ballot_box_with_check: Done
 
 #### Least Privilege Access to S3
 
@@ -456,7 +464,13 @@ sudo service ssh restart
 **Deliverables:**
 
 - **E4T2_s3iampolicy.png** - Screenshot of the updated IAM policy.
+  ![E4T2_s3iampolicy.png](./E4T2_s3iampolicy.png)
+
 - **E4T2_s3copy.png** - Screenshot of the failed copy attempt.
+
+![E4T2_s3copy.png](./E4T2_s3copy.png)
+
+:ballot_box_with_check: Done
 
 #### Apply Default Server-side Encryption to the S3 Bucket
 
@@ -470,6 +484,10 @@ Capture the screenshot of the secret recipes bucket showing that default encrypt
 
 - **E4T2_s3encryption.png** - Screenshot of the S3 bucket policy.
 
+![E4T2_s3encryption.png](./E4T2_s3encryption.png)
+
+:ballot_box_with_check: Done
+
 ---
 
 ### Task 3: Check Monitoring Tools to see if the Changes that were made have Reduced the Number of Findings
@@ -482,8 +500,17 @@ Capture the screenshot of the secret recipes bucket showing that default encrypt
 **Deliverables**:
 
 - **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.
+  ![E4T3_securityhub.png](./E4T3_securityhub.png)
+
 - **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.
+  ![E4T3_config.png](./E4T3_config.png)
+
 - **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.
+  ![E4T3_inspector.png](./E4T3_inspector.png)
+
+:warning: I've waited several hours and there have been no new inspector runs / updates to results reported in Exercise 2.
+
+:ballot_box_with_check: Done
 
 ---
 
@@ -498,7 +525,9 @@ Submit your answers in E4T4.txt.
 
 **Deliverables**:
 
-- **E4T4.txt** - Answers from prompts in Exercise 4, Task 4.
+- **[E4T4.txt](./E4T4.txt)** - Answers from prompts in Exercise 4, Task 4.
+
+:ballot_box_with_check: Done
 
 ---
 
