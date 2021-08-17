@@ -1,0 +1,54 @@
+=====
+
+- Identify tools that will allow you to do the following: 
+- For each tool identify an example compliance violation or vulnerability which it might expose.
+
+a. Scan infrastructure as code templates. 
+    - For CloudFormation, there is:
+        - Cfripper
+        - Cloudsploit
+        - cfn-lint
+
+    - For Terraform, there is:
+        - Chef inspec
+        - Open policy agent / Regula
+        - Terrascan
+
+    - Possible compliance violation or vulnerability exposed?
+        - Detect IAM roles with full "*:*" administrative privileges.
+
+b. Scan AMI’s or containers for OS vulnerabilities. 
+    - Docker Bench for Security
+        - Script to audit Docker containers against security benchmarks
+            - https://github.com/docker/docker-bench-security
+
+        - To enhance Docker Bench for Security, you can add:
+            - Docker Bench Test
+                - https://github.com/alexei-led/docker-bench-test
+            - drydock
+                - https://github.com/zuBux/drydock
+            - Actuary
+                - https://github.com/diogomonica/actuary
+    
+    - Clair
+        - API-driven static container security analysis with a large CVE database
+            - https://github.com/quay/clair
+
+    - Cilium
+        - API-aware networking and security at the kernel layer
+            - https://github.com/cilium/cilium
+
+    - Source:
+        - https://techbeacon.com/security/17-open-source-container-security-tools
+
+    - Possible compliance violation or vulnerability exposed?
+        - OS requiring updated security patches.
+
+c. Scan an AWS environment for cloud configuration vulnerabilities.
+    - Amazon Inspector - Amazon Web Services (AWS)
+        - https://aws.amazon.com/inspector/
+
+    - Possible compliance violation or vulnerability exposed?
+        - Minimum length for passwords compliance violation.
+
+=====

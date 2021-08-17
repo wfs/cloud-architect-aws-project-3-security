@@ -567,7 +567,9 @@ Submit your answers in E5T2.txt
 
 **Deliverables**:
 
-- **E5T2.txt** - Answer from prompts in Exercise 5, Task 2.
+- **[E5T2.txt](./E5T2.txt)** - Answer from prompts in Exercise 5, Task
+
+:ballot_box_with_check: Done
 
 ---
 
