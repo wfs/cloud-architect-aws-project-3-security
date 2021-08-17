@@ -265,13 +265,6 @@ Now you will run scripts that will simulate the following attack conditions:
 Making an SSH connection to the application server using brute force password cracking.
 Capturing secret recipe files from the s3 bucket using stolen API keys.
 
-**_Deliverables for Exercise 3:_**
-
-- **E3T1_guardduty.png** - Screenshot of Guard Duty findings specific to the Exercise 3, Task 1 attack.
-- **E3T1.txt** - Answer to the questions at the end of Exercise 3, Task 1.
-- **E3T2_s3breach.png** - Screenshot showing the resulting breach after the brute force attack.
-- _Optional_ **Task 3** - Screenshots showing attack attempts and monitoring or logs from the WAF showing blocked attempts.
-
 ---
 
 ### Task 1: Brute force attack to exploit SSH ports facing the internet and an insecure configuration on the server
@@ -369,22 +362,6 @@ Submit screenshots of your attempts and monitoring or logs from the WAF showing 
 ---
 
 ## Exercise 4 - Implement Security Hardening
-
-**_Deliverables for Exercise 4:_**
-
-- **E4T1.txt** - Answer to the prompts in Exercise 4, Task 1.
-- **E4T2_sshbruteforce.png** - Screenshot of terminal window showing the brute force attack and the remediation.
-- **E4T2_networksg.png** - Screenshot of the security group change.
-- **E4T2_sshattempt.png** - Screenshot of your SSH attempt.
-- **E4T2_s3iampolicy.png** - Screenshot of the updated IAM policy.
-- **E4T2_s3copy.png** - Screenshot of the failed copy attempt.
-- **E4T2_s3encryption.png** - screenshot of the S3 bucket policy
-- **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.
-- **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.
-- **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.
-- **E4T4.txt** - Answers from prompts in Exercise 4, Task 4.
-- _Optional_ **c3-app_solution.yml** and **c3-s3_solution.yml** - Updated cloud formation templates which reflect changes made in E4 tasks related to AWS configuration changes.
-- _Optional_ **E4T5.txt** - Additional hardening suggestions from Exercise 4, Task 5.
 
 ---
 
@@ -508,7 +485,7 @@ Capture the screenshot of the secret recipes bucket showing that default encrypt
 - **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.
   ![E4T3_inspector.png](./E4T3_inspector.png)
 
-:warning: I've waited several hours and there have been no new inspector runs / updates to results reported in Exercise 2.
+:warning: I've waited a couple of days now and there have been no new inspector runs / updates to results reported in Exercise 2.
 
 :ballot_box_with_check: Done
 
@@ -549,21 +526,6 @@ Take a look at a very common deployment pipeline diagrammed below:
 
 ![DevOpsPipeline](starter/DevOpsPipeline.png)
 
-The high-level steps are as follows:
-
-1. The user makes a change to the application code or OS configuration for a service.
-2. Once the change is committed to source, a build is kicked off resulting in an AMI or a container image.
-3. The infrastructure as code is updated with the new AMI or container image to use.
-4. Changes to cloud configuration or infrastructure as code may have also been committed.
-5. A deployment to the environment ensues applying the changes
-
-**_Deliverables for Exercise 5:_**
-
-- **DevSecOpsPipline.[ppt or png]** - Your updated pipeline.
-- **E5T2.txt** - Answer from prompts in Exercise 5, Task 2.
-- _Optional_ **E5T3.png** - Screenshot of tool that has identified bad practices.
-- _Optional_ **E5T3.txt** - Answers from prompts in Exercise 5, Task 3.
-
 ---
 
 ### Task 1: Design a DevSecOps pipeline
@@ -580,6 +542,14 @@ Submit your design as a ppt or png image named DevSecOpsPipeline.[ppt or png].
 **Deliverables**:
 
 - **DevSecOpsPipline.[ppt or png]** - Your updated pipeline.
+
+![DevSecOpsPipline.png](./DevSecOpsPipline.png)
+
+- _Optional_ **E5T3.png** - Screenshot of tool that has identified bad practices.
+
+![E5T3.png](./E5T3.png)
+
+:ballot_box_with_check: Done
 
 ---
 
