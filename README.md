@@ -310,6 +310,9 @@ Submit text answers in E3T1.txt.
 **Deliverables:**
 
 - **E3T1_guardduty.png** - Screenshot of Guard Duty findings specific to the Exercise 3, Task 1 attack.
+
+- ![E3T1_guardduty.png](./E3T1_guardduty.png)
+
 - **[E3T1.txt](./E3T1.txt)** - Answer to the questions at the end of Exercise 3, Task 1.
   ![ssh_brute_force_attach_terminal_1.png](./ssh_brute_force_attach_terminal_1.png)
   ![vpc_flow_logs_s3_destination.png](./vpc_flow_logs_s3_destination.png)
