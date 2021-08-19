@@ -295,9 +295,17 @@ You should see output similar to the following:
 
 Wait 10 - 15 minutes and check AWS Guard Duty.
 
-:warning: :astonished: Takes a few days to materialise. Don't give up!
+:no_entry_sign: :warning: [GuardDuty is not showing any results](https://knowledge.udacity.com/questions/641544)
 
-[GuardDuty is not showing any results - expected brute force attack at least](https://knowledge.udacity.com/questions/641544)
+> I have now run the ssh attack for over 15 hours and waited days with still no GuardDuty alerts showing for "UnauthorisedAccess:EC2/SSHBruteForce".
+>
+> As stated in many Knowlege issues by Mentors to students experiencing this same problem, below is evidence of my long running ssh attack and existing GuardDuty console so that my project can progress with its assessment. Thanks.
+>
+> References:
+>
+> 1. https://knowledge.udacity.com/questions/641544
+> 1. https://knowledge.udacity.com/questions/294431
+> 1. https://knowledge.udacity.com/questions/294660
 
 #### 3. Answer the following questions:
 
@@ -309,7 +317,13 @@ Submit text answers in E3T1.txt.
 
 **Deliverables:**
 
-- **E3T1_guardduty.png** - Screenshot of Guard Duty findings specific to the Exercise 3, Task 1 attack.
+- **[E3T1_guardduty.png](./E3T1_guardduty.png)** - Screenshot of Guard Duty findings specific to the Exercise 3, Task 1 attack.
+
+- Long running ssh attack + E3T1_guardduty.png
+
+  - ![ssh_brute_force_attach_terminal_1.png](./ssh_brute_force_attach_terminal_1.png)
+  - ![ssh_brute_force_attach_terminal_2.png](./ssh_brute_force_attach_terminal_2.png)
+  - ![ssh_brute_force_attach_terminal_3.png](./ssh_brute_force_attach_terminal_3.png)
 
 - ![E3T1_guardduty.png](./E3T1_guardduty.png)
 
